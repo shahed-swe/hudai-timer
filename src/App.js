@@ -24,7 +24,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div>
+          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
         <p style={{ margin: "0" }}>Time <span style={{ textDecoration: "underline" }}>{hour}:{minute}:{second}</span></p>
         Time Running Out ({timer * -1})
       </header>
