@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 
 function App() {
 
-  const [hour, setHour] = useState()
-  const [minute, setMinute] = useState()
-  const [second, setSecond] = useState()
-  const [timer, setTimer] = useState()
+  const [hour, setHour] = useState(new Date().getHours())
+  const [minute, setMinute] = useState(new Date().getMinutes())
+  const [second, setSecond] = useState(new Date().getSeconds())
+  const [timer, setTimer] = useState(new Date().getSeconds() - 60)
 
 
 
